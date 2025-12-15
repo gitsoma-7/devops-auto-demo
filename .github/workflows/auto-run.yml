@@ -1,0 +1,11 @@
+name: Auto Update Merge Execute
+
+on: push
+
+jobs:
+  run-code:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run Python Program
+      run: python app.py
